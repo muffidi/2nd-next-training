@@ -16,11 +16,6 @@ export default function Home() {
           Welcome
         </h1>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
         <div className={styles.grid}>
           <a href="csr" className={styles.card}>
             <h2>CSR &rarr;</h2>
