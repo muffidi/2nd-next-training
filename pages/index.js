@@ -17,6 +17,11 @@ export default function Home() {
         </h1>
 
         <div className={styles.grid}>
+        <a href="categories" className={styles.card}>
+            <h2>Categories &rarr;</h2>
+            <p>Show All Categories</p>
+          </a>
+
           <a href="csr" className={styles.card}>
             <h2>CSR &rarr;</h2>
             <p>Client-Side Rendering</p>

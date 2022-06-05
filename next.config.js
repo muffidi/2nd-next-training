@@ -6,5 +6,8 @@ const nextConfig = {
 module.exports = {
   nextConfig, 
   trailingSlash: true,
+  images: {
+    domains: ['b2cdemo.getswift.asia'],
+  }
 }
 
