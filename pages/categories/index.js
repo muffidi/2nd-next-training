@@ -30,7 +30,7 @@ const Categories = () => {
     console.log(data)
 
     return (
-        <div key={category.id}>
+        <div>
             <Head>
                 <title>Category List</title>
                 <meta name="description" content="Cat List" />
