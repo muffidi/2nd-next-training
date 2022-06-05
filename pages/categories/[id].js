@@ -1,6 +1,6 @@
 import { useQuery } from "@apollo/client";
 import { useRouter } from "next/router";
-import { GET_PRODUCTS_BY_CATEGORY, GET_CATEGORIES } from "./schema";
+import { GET_PRODUCTS_BY_CATEGORY, GET_CATEGORIES } from "../../components/schema";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";

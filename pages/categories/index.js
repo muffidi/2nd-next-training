@@ -2,7 +2,7 @@ import { gql, useQuery } from '@apollo/client';
 import { Button } from '@material-ui/core';
 import Head from 'next/head';
 import Link from 'next/link';
-import { GET_CATEGORIES } from './schema';
+import { GET_CATEGORIES } from '../../components/schema';
 import React from 'react';
 import Skeleton from '@material-ui/lab/Skeleton';
 
@@ -30,7 +30,7 @@ const Categories = () => {
     console.log(data)
 
     return (
-        <div>
+        <div key={category.id}>
             <Head>
                 <title>Category List</title>
                 <meta name="description" content="Cat List" />
@@ -39,7 +39,7 @@ const Categories = () => {
             <h2 style={{textAlign: 'center'}}>Category List</h2>
             <div style={{display: 'grid', gap: '20px', gridTemplateColumns: 'repeat(4, 1fr)'}}>
             {data.categories.items.map(category => (
-                <Button style={{padding: '16px', border: '1px dashed #dddddd', backgroundColor: 'whitesmoke', borderRadius: '8px', boxShadow: '5px 5px 2px #aaaaaa', textDecoration: 'none', color: 'black', width: '300px', margin: '0 auto'}}>
+                <Button key={category.id} style={{padding: '16px', border: '1px dashed #dddddd', backgroundColor: 'whitesmoke', borderRadius: '8px', boxShadow: '5px 5px 2px #aaaaaa', textDecoration: 'none', color: 'black', width: '300px', margin: '0 auto'}}>
                 <Link key={category.id} href={`/categories/${category.id}`}>
                 <p>{category.name}</p>
                 </Link>

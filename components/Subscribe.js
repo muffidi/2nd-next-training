@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useMutation } from "@apollo/client";
-import { POST_SUBSCRIBE } from "pages/categories/schema";
+import { POST_SUBSCRIBE } from "./schema";
 import { Box, Button, TextField } from "@material-ui/core";
 
 

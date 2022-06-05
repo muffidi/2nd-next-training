@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import { useStyles } from '@styles/style';
 import Head from 'next/head';
 import Image from 'next/image';
-import { GET_PRODUCTS_BY_SKU } from '../schema';
+import { GET_PRODUCTS_BY_SKU } from '../../../components/schema';
 import Subscribe from '@components/Subscribe';
 import { Button } from '@material-ui/core';
 
